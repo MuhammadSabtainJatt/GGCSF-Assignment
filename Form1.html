@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font link  -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet">
+
+    <style>
+        body {
+            height: 100vh;
+            font-family: Teko, sans-serif;
+            display: flex;
+            align-items: center;
+            background-image:  url('https://cdn.wallpapersafari.com/70/15/Gb4Yyv.jpg');
+        }
+        .login-container {
+            margin: auto;
+            background:white
+        }
+        .heading{
+            font-size: 70px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="login-container w-50 p-5">
+        <form class="login-form ">
+            <h1 class="heading text-center">Login</h2>
+            <div class="form-group">
+                <input type="email" class="form-control"  placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="form-group d-flex justify-content-between align-items-center">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                </div>
+                <a href="#" class="text-success">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn btn-success w-100 ">Login</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
